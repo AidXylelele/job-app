@@ -1,0 +1,16 @@
+.header {
+  @apply flex flex-wrap gap-2 justify-between pb-2;
+  h1 {
+    @apply max-md:text-lg text-3xl font-bold text-gray-700;
+  }
+  .under_line {
+    @apply basis-full w-full border-b-2 border-gray-300;
+  }
+  .header_data {
+    @apply flex flex-wrap gap-2 text-gray-600 max-md:order-last justify-around max-md:justify-start items-center;
+
+    p {
+      @apply inline mx-2 max-md:text-sm text-gray-600;
+    }
+  }
+}

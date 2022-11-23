@@ -1,0 +1,27 @@
+.data {
+  @apply flex flex-grow flex-wrap;
+
+  .main_data {
+    @apply flex flex-grow flex-wrap justify-between;
+  }
+
+  .break {
+    @apply basis-full w-0;
+  }
+
+  h1 {
+    @apply text-2xl font-bold max-w-xl max-xl:text-xl max-md:text-base max-sm:text-base my-2 text-gray-700;
+  }
+
+  p {
+    @apply my-1 text-base min-w-fit font-normal max-md:text-xs max-sm:text-xs text-gray-400;
+  }
+
+  .salary {
+    @apply flex flex-col w-fit min-h-fit max-md:text-xs max-xl:order-last max-md:flex-col-reverse;
+
+    p {
+      @apply text-gray-800 m-0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.text {
+  @apply my-2;
+  h1 {
+    @apply my-2 max-w-lg text-base font-bold text-gray-600;
+  }
+  p {
+    @apply text-gray-600;
+  }
+  ul {
+    @apply list-inside list-square text-gray-600;
+  }
+}

@@ -1,0 +1,43 @@
+* {
+  @apply box-border;
+}
+
+.container {
+  @apply flex flex-row w-screen min-h-screen max-xl:flex-col gap-2 max-w-full mx-auto bg-white p-10;
+
+  .map {
+    @apply bg-gray-800 mx-auto min-w-fit max-md:max-w-max h-fit rounded-xl overflow-hidden max-sm:overflow-auto;
+
+    .details {
+      @apply p-4 text-white bg-gray-900 rounded-br-full w-36 rounded-tr-full overflow-visible;
+
+      h1 {
+        @apply text-xl min-w-max font-bold max-md:text-base max-sm:text-sm my-2;
+      }
+
+      span {
+        @apply inline-block min-w-max;
+        .location {
+          @apply text-gray-400;
+        }
+        p {
+          @apply inline min-w-max text-sm;
+        }
+      }
+      .map_item {
+        @apply max-sm:scale-50;
+      }
+    }
+  }
+
+  .information {
+    @apply flex flex-col flex-grow mx-auto mr-6;
+    .return_btn {
+      @apply flex flex-row max-md:hidden my-4 bg-gray-300 text-gray-600 font-light justify-between w-fit p-3 rounded-xl text-center;
+    }
+  }
+
+  .contact {
+    @apply xl:hidden;
+  }
+}

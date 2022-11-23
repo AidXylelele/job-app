@@ -1,0 +1,68 @@
+* {
+  @apply box-border;
+}
+
+.background {
+  @apply w-screen min-h-screen bg-gray-300 p-4;
+}
+
+.container {
+  @apply flex flex-row gap-4 p-4 my-2 min-w-fit bg-white max-sm:bg-gray-100 border rounded-lg shadow-sm shadow-gray-400;
+
+  .image {
+    @apply flex flex-shrink-0 max-sm:w-10 max-sm:h-10 h-20 w-20 rounded-full;
+  }
+  .main {
+    @apply flex max-xl:flex-col flex-grow flex-row;
+  }
+
+  .data_column {
+    @apply max-xl:flex-grow flex flex-row gap-4  justify-between;
+
+    .rating {
+      @apply my-auto;
+    }
+
+    .data {
+      @apply max-sm:text-xs flex flex-col flex-grow justify-between items-end text-gray-400 font-normal;
+
+      .save {
+        @apply max-xl:hidden;
+      }
+    }
+  }
+  .description {
+    @apply max-xl:order-2 flex flex-col flex-grow space-y-2;
+
+    h1 {
+      @apply max-w-2xl max-sm:text-xs text-lg text-gray-600 font-bold;
+    }
+
+    .departament {
+      @apply max-sm:text-xs flex flex-row gap-2 my-2 text-gray-400 font-light;
+    }
+    .location {
+      @apply max-sm:text-xs flex flex-row text-gray-400 items-center font-normal -mx-1;
+    }
+  }
+}
+
+.pagination_container {
+  @apply flex items-center justify-center px-4 py-3 sm:px-6;
+  .pagination_data {
+    @apply sm:flex sm:flex-1 sm:items-center sm:justify-center;
+  }
+  nav {
+    @apply isolate inline-flex -space-x-px rounded-md shadow-sm;
+  }
+  .leftArrow {
+    @apply relative inline-flex items-center rounded-l-md border border-gray-400 bg-white px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 focus:z-20;
+  }
+  .rightArrow {
+    @apply relative inline-flex items-center rounded-r-md border  border-gray-400 bg-white px-2 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 focus:z-20;
+  }
+
+  .item {
+    @apply relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20;
+  }
+}
