@@ -17,7 +17,7 @@ const JobDetailedContainer: React.FC<JobDetailedContainerProps> = (
   const { currentJob, onSetTag } = props;
 
   if (!currentJob) {
-    return <Navigate replace to="/jobs" />;
+    return <Navigate replace to="/" />;
   }
 
   const { salary, description, createdAt, updatedAt } = currentJob;

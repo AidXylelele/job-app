@@ -22,7 +22,7 @@ const Job: React.FC<JobProps> = (props: JobProps) => {
         <div className={styles.description}>
           <NavLink
             end
-            to={`./../jobs/${data.id}`}
+            to={`./../${data.id}`}
             onClick={() => onSetCurrentJob({ ...data, location })}
           >
             <h1>{data.title}</h1>

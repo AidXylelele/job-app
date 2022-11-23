@@ -30,8 +30,8 @@ const App: React.FC<AppProps> = (props: AppProps) => {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/jobs" element={<JobContainer />} />
-          <Route path="/jobs/:jobId" element={<JobDetailed />} />
+          <Route path="/" element={<JobContainer />} />
+          <Route path="/:jobId" element={<JobDetailed />} />
         </Routes>
       </div>
     </BrowserRouter>
