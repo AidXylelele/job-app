@@ -78,7 +78,7 @@ const JobDetailedPage: React.FC<JobDetailedProps> = (
         <AdditionalInfo
           {...{ title: "Attached images", data: pictures, onSetTag }}
         />
-        <NavLink to="/jobs">
+        <NavLink to="/job-app/">
           <div className={styles.return_btn}>
             <SvgIcon>
               <path d={iconPath.leftArrow} />
